@@ -1,12 +1,28 @@
 body{
     background-color: #F1F3F4;
-
+    width: 100%;
     overflow-x: hidden;
+}
+#sosmed {
+    text-decoration: none !important;
+}
+.dropdown-item:hover{
+    color: black !important;
+}
+.dropdown-item:scope{
+    color: black !important;
 }
 #logo{
     padding: 0;
     margin: 0;
     
+}
+#blog{ 
+    width: 13rem;
+    margin-left: 2rem;
+    border-left: 5px solid #BAD7DF;
+    margin-right: 3rem;
+  
 }
 #foot{
     background-color: rgba(28, 41, 54, 0.9);
@@ -17,10 +33,15 @@ body{
     color: white;
 }
 #logo p{
+    margin-left: -0.5rem;
+    float: inline-start;
+    margin-top: -0.3rem;
+    line-height: 1.5rem;
     color: #FFFFFF;
-    line-height: 2rem;
     font-family: 'ABeeZee';
 }
+
+
 #input{
     width: 100%;
     height: 50px;
@@ -32,17 +53,35 @@ body{
     margin-bottom: 10px;
     margin-left: 1rem;
 }
+#buton{
+    width: 100%;
+    height: 50px;
+}
 @media all and (min-width: 992px){#isi img {
     width:250px;
     height: 300px;
 }
+#kirii{
+    margin-left: 2rem !important;
+}
+#frame{
+    width: 705px;
+    height: 400px;
+}
+#logo p{
+    color: #FFFFFF;
+    line-height: 2rem;
+    font-family: 'ABeeZee';
+    margin-top: 0.2rem;
+}
 #blog{
     padding: 5px 15px;
     border-left: 5px solid #BAD7DF;
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
     margin-right: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    width: 20rem;
 }
 #apa{
     width: 20px;
@@ -166,7 +205,8 @@ element::-webkit-scrollbar {
     border-radius: 6px 0 6px 6px;
 }
 @media all and (min-width: 992px) {
-
+   
+   
 	.dropdown-menu li{
 		position: relative;
 	}
@@ -179,7 +219,7 @@ element::-webkit-scrollbar {
 		right:100%; left:auto;
 	}
 
-	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover{ background-color: #f1f1f1; color: white;}
 	.dropdown-menu > li:hover > .submenu{
 		display: block;
 	}
@@ -188,6 +228,122 @@ element::-webkit-scrollbar {
 
 /* ============ small devices ============ */
 @media (max-width: 991px) {
+    #vidio li{
+        list-style: none;
+        margin-bottom: 1rem;
+        display:block;
+        line-height: 0.5rem;
+    }
+    .bton{
+        width: 40px !important;
+        height: 40px !important;
+    }
+    #kanan{
+        margin-left: 1rem;
+    width: 20rem !important;
+    }
+    #kanan img{
+        width: 5rem;
+        height: 5rem;
+    }
+    #tulisan{
+        width: 13rem;
+        margin-left: 2rem;
+        border-left: 5px solid #BAD7DF;
+        margin-right: 3rem;
+      
+    }
+    #ini{
+        margin-left: -4rem !important;
+    }
+    #gal{
+      display: flex;
+      list-style: none;
+      
+    }
+    #gal li{
+      width: auto;
+      float: left;
+    }
+    #table img{
+        height: 20rem !important;
+    }
+    #populer img{
+        margin-left: 5rem;
+        width: 10rem !important;
+
+    }
+    #populer{
+        margin-top: -2rem !important;
+    }
+    #populer h5{
+        margin-left: 5rem;
+        font-size:large;
+        margin-top: -2rem;
+    }
+    #isi img{
+        margin-left: 2rem;
+        width: 15rem !important;
+        height: 15rem !important;
+    }
+    #terkait ul{
+        list-style: none;
+    }
+    #terkait img{
+       width: 50px;
+       margin-bottom: 0.5rem;
+    }
+    #kirii{
+        margin-bottom: 1rem; 
+        margin-left: 1rem;
+        width: 20rem;
+    }
+    #kirii img{}
+    #kanann{
+        margin-bottom: 1rem; 
+        margin-left: 1rem;
+        width: 20rem;
+   
+    }
+    #frame{
+        width: 15rem;
+    }
+    #sosmed{
+        margin-left: 1rem;
+        width: 14rem !important;
+    }
+    #input{
+        margin-left: 3rem !important;
+       
+        width: 10rem;
+    }
+    #buton{
+        margin-left: 3rem !important;
+        width: 10rem;
+    }
+    .row{
+        --bs-gutter-x: 0 !important;
+    }
+    #semua{
+
+    }
+    #framee{
+        width: 10rem;
+        display: none;
+    }
+    #mid{ margin-left: 1rem;
+        width: 20rem;
+    }
+    .card p{
+        margin-top: 0.5rem;
+        font-size:smaller;
+    }
+.card img{ 
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    width: 180px;
+    height: 150px;
+}
 
 .dropdown-menu .dropdown-menu{
 		margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
@@ -243,10 +399,33 @@ ba-facebook-f:before, .ba-facebook:before {
 a:hover { text-decoration: none; }
 
 
-a:active { text-decoration: none; }
+a:active { color: white; }
 #populer{
-    border-top: 1px solid black;
+  
 }
 #copy{
     max-width: 100%;
 }
+.arrows
+ {  width: 48px;
+   height: 48px;
+   border-color: #000;
+   position: absolute;
+   top: 50%;
+   margin-top: -31px;
+}
+.prev
+  { border-bottom: 6px solid;
+   border-left: 6px solid;
+   transform: rotate(45deg);
+   left: 10px;
+}
+   
+.next
+  { border-bottom: 6px solid;
+   border-left: 6px solid;
+   transform: rotate(-135deg);
+   right: 10px;}
+   .bton{
+    background-color: #000;
+   }

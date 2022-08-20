@@ -20,6 +20,9 @@
               </ul>
             </div>
           </div>
+              <div class="col-md-7 mt-md-0 mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0573491254186!2d98.6559925147059!3d3.574287897398948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fd668f63c3f%3A0x3838ce024c2994ea!2sInspektorat%20Provinsi%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1660990236458!5m2!1sid!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="frame"></iframe>
+            </div>
       </div>
       </div>
     </footer>

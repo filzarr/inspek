@@ -1,4 +1,4 @@
-<div class="row mt-5 pt-3  pb-3   h-auto col-xl-5 col-xs-12" style="background-color: #ffffff" >
+<div class="row mt-5 pt-3  pb-3   h-auto col-xl-5 col-xs-12" style="background-color: #ffffff" id="mid" >
     <div class="container justify-content-center " style="background-color: rgba(196, 196, 196, 0.17);"  id="blog">
       <h2>Berita Terkini</h2>
     </div>
@@ -11,7 +11,7 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text" style="border-top: 2px solid #000000">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text" style="border-top: 2px solid #0b0b0b">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>

@@ -5,7 +5,7 @@
           <img src="img/contoh.jpg" class="d-block w-100" style="height: 550px" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/contoh.jpg" class="d-block w-100" style="height: 550px" alt="...">
+          <img src="img/contoh1.jpg" class="d-block w-100" style="height: 550px" alt="...">
         </div>
         <div class="carousel-item">
           <img src="img/contoh.jpg" class="d-block w-100" style="height: 550px" alt="...">
