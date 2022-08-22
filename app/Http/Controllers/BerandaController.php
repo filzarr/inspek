@@ -9,7 +9,7 @@ class BerandaController extends Controller
     public function api(){
         $curl = curl_init();
         curl_setopt_array($curl,[
-            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/search?channelId=UCvPPXcl5dJiBgRKGTA8inPA&part=snippet&order=date&key=AIzaSyDzpJ5dis1Tw0DZ6TFYaOZPf_d-dLPJnlk&maxResult=20",
+            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/search?channelId=UCvPPXcl5dJiBgRKGTA8inPA&part=snippet&order=date&key=AIzaSyDzpJ5dis1Tw0DZ6TFYaOZPf_d-dLPJnlk&maxResults=50",
             CURLOPT_RETURNTRANSFER => true,
         ]);
         $response = curl_exec($curl);

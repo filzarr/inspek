@@ -80,7 +80,7 @@
             <div id="carouselExampleControls2" class="carousel slide" data-db-ride="carousel">
               <div class="carousel-inner  " id="vidio" >
                   <div class="carousel-item active">
-                    <div class="  d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
+                    <div class=" gap-3 d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
                       <ul class="list-group col-sm-4 offset-sm-4 me-2 " id="gal">
                         
                             
@@ -116,28 +116,51 @@
                   </div>
             
                   <div class="carousel-item">
-                    <div class="  d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
-                      <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                        <li> <img src="img/contoh1.jpg" class="rounded float-start img-fluid" alt="..." " ></li>
-                        <li> <img src="img/contoh1.jpg" class="rounded float-start img-fluid" alt="..." "></li>
+                    <div class="gap-3  d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
+                      <ul class="list-group col-sm-4 offset-sm-4  " id="gal">
+                        <li><iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][4]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
+                          
+                        <li> <iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][5]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
                       </ul>
                       <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                        <li> <img src="img/contoh2.jpg" class="rounded float-start img-fluid" alt="..." " ></li>
-                        <li> <img src="img/contoh2.jpg" class="rounded float-start img-fluid" alt="..." "></li>
+                        
+                        <li> <iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][6]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
+                          
+                        <li> <iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][7]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
                       </ul>
                      
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="  d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
+                    <div class=" gap-3 d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
                       <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                        <li> <img src="img/contoh1.jpg" class="rounded float-start img-fluid" alt="..." " ></li>
-                        <li> <img src="img/contoh1.jpg" class="rounded float-start img-fluid" alt="..." "></li>
-                      </ul>
+                        
+                        <li> <iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][8]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
+                          
+                        <li> <iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][9]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
+                        </ul>
                       <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                        <li> <img src="img/contoh2.jpg" class="rounded float-start img-fluid" alt="..." " ></li>
-                        <li> <img src="img/contoh2.jpg" class="rounded float-start img-fluid" alt="..." "></li>
-                      </ul>
+                        
+                        <li> <iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][10]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
+                          
+                        <li> <iframe id="player" type="text/html" width="180" height="200"
+                          src="http://www.youtube.com/embed/{{ $hasil['items'][11]['id']['videoId']}}"
+                          frameborder="0"></iframe></li>
+                        </ul>
                      
                     </div>
                   </div>

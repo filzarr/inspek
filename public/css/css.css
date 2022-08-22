@@ -295,6 +295,9 @@ element::-webkit-scrollbar {
         margin-right: 3rem;
       
     }
+    #player{
+        margin-right: 1rem !important;
+    }
     #ini{
         margin-left: -4rem !important;
     }
