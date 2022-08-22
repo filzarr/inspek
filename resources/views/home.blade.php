@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/Chart.js">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -29,6 +32,7 @@
       @include('layouts.leftcontent')
     </div>
       @include('layouts.galery')
+      @include('layouts.diagram')
     </main>
    
       @include('layouts.footer')
@@ -47,5 +51,9 @@
           $('#myCarousel').carousel();
       });
  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>

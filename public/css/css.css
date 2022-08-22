@@ -3,6 +3,11 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+/* #myChart{
+    width: 500px !important;
+    height: 500px !important;
+} */
+
 #iconsi{
     width: 50px !important;
     height: 50px !important;
