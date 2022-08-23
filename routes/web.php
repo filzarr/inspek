@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +18,7 @@ Route::get('/', [BerandaController::class, 'api']);
 Route::get('/post', function () {
     return view('post');
 });
+
+Route::resource('/admin', AdminController::class);
+
+Route::resource('/admin/post', AdminController::class);
