@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +21,12 @@ Route::get('/post', function () {
     return view('post');
 });
 
+//admin
 Route::resource('/admin', AdminController::class);
 
-Route::resource('/admin/post', AdminController::class);
+//post
+Route::resource('/posts', PostController::class);
+
+//comment
+Route::get('/comment', [CommentController::class, 'index']);
+Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');

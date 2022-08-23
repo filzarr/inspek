@@ -8,8 +8,16 @@ use App\Models\Comment;
 class Post extends Model
 {
     use HasFactory;
-    public function comments()
+
+    
+
+    public function Comments()
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function User()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

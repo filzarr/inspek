@@ -13,13 +13,11 @@
 
             <!-- Page Heading -->
             <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-            <a href="{{ route('posts.create') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mb-3"><i
-                class="fas fa-plus fa-sm text-white-50"></i> Add Post</a>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Post List</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Comment List</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -27,22 +25,18 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Title</th>
-                                    <th>Date Published</th>
-                                    <th>View Count</th>
-                                    <th>Action</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Posted By</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($posts as $post)
+                                @foreach ($comment as $comment)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $post->title }}</td>
-                                        <td>{{ $post->published_at }}</td>
-                                        <td>{{ $post->view_count }}</td>
-                                        <td>
-                                            <a href="{{ route('posts.show', $post->id) }}" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></a>
-                                        </td>
+                                        <td>{{ $comment->name }}</td>
+                                        <td>{{ $comment->email }}</td>
+                                        <td>{{ $comment->user }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

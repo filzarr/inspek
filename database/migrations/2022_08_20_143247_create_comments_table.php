@@ -15,9 +15,12 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
+            // $table->string('name');
+            // $table->string('email');
             $table->foreignId('post_id')->references('id')->on('posts');
+            $table->integer('user_id')->unsigned();
+            $table->integer('parent_id')->unsigned()->nullable();
+            $table->text('body');
             $table->timestamps();
         });
     }
