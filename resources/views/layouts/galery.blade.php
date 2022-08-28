@@ -1,5 +1,6 @@
 <div class="flex-lg-row flex-sm-col">
     <div class="d-lg-flex justify-content-lg-evenly ">
+        {{-- galeri foto --}}
         <div class="col-5  my-5 py-5 " style="background-color: #ffffff" id="kanan">
             <div class="row">
                 <div class="justify-content-center">
@@ -86,6 +87,7 @@
                 </div>
             </div>
         </div>
+        {{-- galeri video --}}
         <div class="col-5   my-5 py-5 ps-4" style="background-color: #ffffff" id="kanan">
             <div class="row">
                 <div class="justify-content-center">

@@ -27,16 +27,17 @@ class BerandaController extends Controller
         // navbar
         $head = Menu::get();
         // carousel 
-        $carousel = Carousel::get();
+        $carousel = Carousel::Orderby('created_at', 'desc')->get();
         // post
         $posts = Post::Orderby('created_at', 'desc')->paginate(5);
          return view('home', compact('head',  'hasil', 'carousel', 'posts', 'beritapopuler'));
         
     }
     public function pdf($id){
+        //pdf download
         $pdf = Submenu::find($id);
         $file = "storage/$pdf->file";
-        // dd($file);
+      
         return response()->download($file);
     }
 }

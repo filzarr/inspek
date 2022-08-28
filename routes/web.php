@@ -24,6 +24,7 @@ Route::get('/', [BerandaController::class, 'api']);
 Route::get('/post/{id}', [SinglePostController::class, 'index']);
 Route::post('submit/comment', [SinglePostController::class, 'store'])->name('submitcomment');
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
+Route::get('/logout', [LoginController::class, 'logout'])->middleware('auth');
 Route::post('/submitlogin', [LoginController::class, 'authenticate'])->middleware('guest');
 
 // Route::get('/post', function () {
@@ -47,4 +48,4 @@ Route::post('/create/menu/add', [NavbarController::class, 'storemenu'])->middlew
 //comment
 Route::get('/comment', [CommentController::class, 'index'])->middleware('auth');
 Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
-Route::get('/comment/delete/{id}', [CommentController::class, 'destroy']);
+Route::get('/comment/delete/{id}', [CommentController::class, 'destroy'])->middleware('auth');

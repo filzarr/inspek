@@ -16,14 +16,14 @@
                     
                 <div class="be-comment">
                     <div class="be-img-comment">
-                        <a href="blog-detail-2.html">
+                        <a href="">
                             <img src={{ url('img/blank.png') }} alt="" class="be-ava-comment">
                         </a>
                     </div>
                     <div class="be-comment-content col-10">
 
                         <span class="be-comment-name">
-                            <a href="blog-detail-2.html">{{ $item->name }}</a>
+                            <a href="">{{ $item->name }}</a>
                         </span>
                         <span class="be-comment-time">
                             <i class="fa fa-clock-o"></i>

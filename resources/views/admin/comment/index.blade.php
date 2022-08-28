@@ -27,6 +27,7 @@
                                     <th>No</th>
                                     <th>Name</th>
                                     <th>Email</th>
+                                    <th>Comment</th>
                                     <th>action</th>
                                 </tr>
                             </thead>
@@ -36,7 +37,7 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $comment->name }}</td>
                                         <td>{{ $comment->email }}</td>
-                                   
+                                        <td>{{ $comment->body }}</td>
                                         <td><a href="/comment/delete/{{ $comment->id }}" class="btn btn-danger btn-sm"><i class="bi bi-x"></i></a></td>
                                     </tr>
                                 
