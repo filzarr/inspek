@@ -2,7 +2,7 @@
     <div class="row background-white py-0">
        
           <div class="col-2">
-            <img src="img/logo_inspektorat.png" class="mb-0 ms-md-0 evenly float-sm-start img-fluid" alt="...">
+            <img src={{ url("img/logo_inspektorat.png") }} class="mb-0 ms-md-0 evenly float-sm-start img-fluid" alt="...">
           </div>
           <div class="col-8 my-0 mx-2 py-0 " id="logo">
             <p class="fs-2 " id="logo" style="padding-top: 0.7rem"> <!--have to figure out how to wrap this-->

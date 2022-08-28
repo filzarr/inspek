@@ -1,22 +1,41 @@
 import Chart from 'chart.js/auto';
 
 const labels = [
-    'Red',
-    'Blue',
-    'Yellow'
+    'Pejabat Struktural II',
+    'Pejabat Struktural III',
+    'Pejabat Struktural IV',
+    'Auditor Ahli Madya',
+    'Auditor Ahli Muda',
+    'Auditor Ahli Pertama',
+    'Auditor Ahli Penyelia',
+    'Auditor Pelaksana Lanjutan',
+    'PPUD Madya',
+    'PPUD Muda',
+    'PPUD Pertama',
+    'Jabatan Fungsional Umumu',
 ];
 
 const data = {
     labels: labels,
     datasets: [{
         label: 'My First Dataset',
-        data: [300, 50, 100],
+        data: [1, 6, 3, 8, 24, 20, 1, 1, 29, 16, 2, 40],
         backgroundColor: [
           'rgb(255, 99, 132)',
           'rgb(54, 162, 235)',
-          'rgb(255, 205, 86)'
+          'rgb(255, 205, 86)',
+          'rgb(235, 229, 52)',
+          'rgb(147, 235, 52)',
+          'rgb(52, 235, 107)',
+          'rgb(52, 235, 174)',
+          'rgb(113, 52, 235)',
+          'rgb(165, 52, 235)',
+          'rgb(235, 83, 52)',
+          'rgb(125, 104, 74)',
+          'rgb(60, 94, 34)',
+
         ],
-        hoverOffset: 4
+        hoverOffset: 1
       }]
     
 };
@@ -31,7 +50,7 @@ const config = {
                     // This more specific font property overrides the global property
                     font: function(context) {
                         var width = context.chart.width;
-                        var size = Math.round(width / 25);
+                        var size = Math.round(width / 40);
         
                         return {
                             weight: 'bold',
@@ -45,7 +64,7 @@ const config = {
                 text: 'Data Pegawai 2022',
                 font: function(context) {
                     var width = context.chart.width;
-                    var size = Math.round(width / 10);
+                    var size = Math.round(width / 15);
     
                     return {
                         weight: 'bold',

@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-
             $table->string('title');
-            $table->string('date');
-            $table->text('isi');
-            $table->BigInteger('view_count');
+            $table->string('image');
+            $table->timestamp('published_at');
+            $table->text('body');    
+            $table->bigInteger('reads')->unsigned()->default(0)->index();
             $table->timestamps();
         });
     }

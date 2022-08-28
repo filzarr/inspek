@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->foreignId('post_id')->references('id')->on('posts');
+            $table->text('body');
             $table->timestamps();
         });
     }

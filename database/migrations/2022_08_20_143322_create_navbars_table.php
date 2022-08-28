@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('navbars', function (Blueprint $table) {
             $table->id();
+            
+            $table->string('menu');
+            $table->foreignId('judul_id')->references('id')->on('menus');
             $table->timestamps();
         });
     }

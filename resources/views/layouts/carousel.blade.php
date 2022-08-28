@@ -1,16 +1,18 @@
 <section id="table" style="background-color: #f3f3f3" style="padding: 16px" style="margin-bottom: 10px" >
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/contoh.jpg" class="d-block w-100" style="height: 550px" alt="...">
+        @php
+            $active = "active";
+        @endphp
+        @foreach ($carousel as $data)
+        <div class="carousel-item {{ $active }}">
+          <img src="storage/{{ $data->image }}" class="d-block w-100" style="height: 550px" alt="...">
         </div>
-        <div class="carousel-item">
-          <img src="img/contoh1.jpg" class="d-block w-100" style="height: 550px" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/contoh.jpg" class="d-block w-100" style="height: 550px" alt="...">
-        </div>
-      </div>
+            @php
+                $active = " "
+            @endphp
+        @endforeach
+       
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
