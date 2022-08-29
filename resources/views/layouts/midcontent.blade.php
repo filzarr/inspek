@@ -3,7 +3,7 @@
         id="blog">
         <h2>Berita Terkini</h2>
     </div>
-    <div class=" " id="car">
+    <div class="grid gap-4 " id="car">
         @foreach ($posts as $post)
             <div class="card mx-3 mb-3 border-0 " class="card">
                 <div class="row ">

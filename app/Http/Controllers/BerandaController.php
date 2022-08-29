@@ -23,7 +23,7 @@ class BerandaController extends Controller
         $hasil = json_decode($response, true);
       
         // berita populer
-        $beritapopuler = Post::Orderby('reads','desc')->paginate(5);
+        $beritapopuler = Post::Orderby('reads','desc')->take(5)->get();
         // navbar
         $head = Menu::get();
         // carousel 

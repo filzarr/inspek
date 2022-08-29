@@ -76,7 +76,7 @@ body{
     height: 300px;
 }
 #car{
-    margin-top: -10rem !important;
+    margin-top: -5rem !important;
     padding-top: -1rem;
 }
 #kirii{
@@ -225,7 +225,9 @@ element::-webkit-scrollbar {
     border-radius: 6px 0 6px 6px;
 }
 @media all and (min-width: 992px) {
-   
+   #card{
+    margin-top: 3rem !important;
+   }
    
 	.dropdown-menu li{
 		position: relative;
