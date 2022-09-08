@@ -23,24 +23,19 @@
                                 <h4>Create Post</h4>
                             </div>
                             <div class="card-body">
-                                <form method="post" action="{{ route('posts.store') }}" enctype="multipart/form-data">
+                                <form method="post" action="{{ route('datapegawai.store') }}" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
 
-                                        <label class="label">Post Title: </label>
-                                        <input type="text" name="title" class="form-control" required />
+                                        <label class="label">Nama</label>
+                                        <input type="text" name="nama" class="form-control" required />
                                     </div>
                                     <div class="form-group">
-                                        <label class="label">Post Body: </label>
-                                        <input id="body" type="hidden" name="body" required>
-                                        <trix-editor input="body"></trix-editor>
-                                    </div>
 
-                                    <div class="form-group">
-
-                                        <label class="label">image</label>
-                                        <input type="file" name="image" class="form-control" required />
+                                        <label class="label">Jumlah</label>
+                                        <input type="text" name="jumlah" class="form-control" required />
                                     </div>
+                                  
                                     <div class="form-group text-center">
                                         <input type="submit" class="btn btn-success" />
                                     </div>

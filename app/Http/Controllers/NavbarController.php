@@ -25,8 +25,9 @@ class NavbarController extends Controller
          
             'submenu' => 'required',
             'file' => 'required|mimes:pdf',
-            'navbar_id' => 'required'
-         
+            'navbar_id' => 'required',
+            'title' => 'required',
+            'body' => 'required'
         ]);
  
         if($request->file('file')){

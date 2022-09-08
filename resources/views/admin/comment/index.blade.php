@@ -42,6 +42,16 @@
                                     </tr>
                                 
                                 @endforeach
+                                @foreach ($pdfcomment as $comment)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $comment->name }}</td>
+                                        <td>{{ $comment->email }}</td>
+                                        <td>{{ $comment->body }}</td>
+                                        <td><a href="/pdf/comment/delete/{{ $comment->id }}" class="btn btn-danger btn-sm"><i class="bi bi-x"></i></a></td>
+                                    </tr>
+                                
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

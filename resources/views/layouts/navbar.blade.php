@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(50, 130, 184, 0.8);">
     <div class="container justify-content-lg-center justify-content-sm-start" id="main_nav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav gap-4">
             <li class="nav-item active"> <a class="nav-link" href="/">Home </a> </li>
             @foreach ($head as $head)
                 <li class="nav-item dropdown">
@@ -13,7 +13,7 @@
                         @endphp
                         @foreach ($subhead as $item)
                             <li>
-                                <a class="dropdown-item" href="#">{{ $item->menu }}</a>
+                                <a class="dropdown-item" href="/menu/{{ $item->id }}">{{ $item->menu }}</a>
 
 
                                 <ul class="submenu dropdown-menu " style="background-color: rgb(50, 130, 184)">
@@ -25,7 +25,7 @@
                                     @endphp
                                     @foreach ($submenu as $data)
                                         <li>
-                                            <a class="dropdown-item" href="/download/{{ $data->id }}">{{ $data->submenu }}</a>
+                                            <a class="dropdown-item" href="/pdf/{{ $data->id }}">{{ $data->submenu }}</a>
                                         </li>
                                     @endforeach
 

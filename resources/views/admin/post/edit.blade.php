@@ -32,7 +32,9 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="label">Post Body: </label>
-                                        <textarea name="body" rows="4" cols="30" class="form-control"   value="{{ old('body', $data->body) }}">{{ old('body', $data->body) }}</textarea>
+                                     
+                                        <input id="body" type="hidden"  value="{!! old('body', $data->body) !!}" name="body" required>
+                                        <trix-editor input="body">{!! old('body', $data->body) !!}</trix-editor>
                                     </div>
                                    
                                     <div class="form-group">

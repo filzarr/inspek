@@ -5,7 +5,7 @@
     <!-- carousel -->
     @include('layouts.carousel')
 <main>
-  <div class="row gap-5" id="semua">
+  <div class="row gap-4" id="semua">
   <!-- bagian sebelah kiri -->
   @include('layouts.rightcontent')
 
@@ -15,7 +15,7 @@
   <!-- bagian kanan -->
   @include('layouts.leftcontent')
 </div>
-  @include('layouts.galery')
+  @include('layouts.galery')  
   @include('layouts.diagram')
 </main>
 @endsection

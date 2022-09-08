@@ -1,4 +1,4 @@
-<section id="table" style="background-color: #f3f3f3" style="padding: 16px" style="margin-bottom: 10px" >
+<section id="table" class="shadow-lg" style="background-color: #f3f3f3" style="padding: 16px" style="margin-bottom: 10px" >
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
       <div class="carousel-inner">
         @php

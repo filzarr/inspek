@@ -8,6 +8,7 @@ use App\Models\Submenu;
 use App\Models\Navbar;
 use App\Models\Carousel;
 use App\Models\Post;
+use App\Models\Datapegawai;
 use Illuminate\Auth\Access\Response;
 class BerandaController extends Controller
 {
@@ -21,7 +22,10 @@ class BerandaController extends Controller
         $response = curl_exec($curl);
         curl_close($curl);
         $hasil = json_decode($response, true);
-      
+
+
+        //pdid, saber punglis,   
+
         // berita populer
         $beritapopuler = Post::Orderby('reads','desc')->take(5)->get();
         // navbar
@@ -30,7 +34,10 @@ class BerandaController extends Controller
         $carousel = Carousel::Orderby('created_at', 'desc')->get();
         // post
         $posts = Post::Orderby('created_at', 'desc')->paginate(5);
-         return view('home', compact('head',  'hasil', 'carousel', 'posts', 'beritapopuler'));
+        //datapegawai
+        $datapegawai = Datapegawai::get();
+    
+         return view('home', compact('head',  'hasil', 'carousel', 'posts', 'beritapopuler', 'datapegawai'));
         
     }
     public function pdf($id){

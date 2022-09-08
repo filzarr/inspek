@@ -1,4 +1,4 @@
-<div class="float-sm-start   mx-4 mt-5 col-3" id="kirii" style="background-color: #ffffff">
+<div class="float-sm-start shadow-lg   mx-4 mt-5 col-3" id="kirii" style="background-color: #ffffff">
     <div class="row" id="kotak">
         <div class="float-sm-start pt-3" id="isi">
             <img style="width: 100%" src="img/kepala.jpg" alt="">

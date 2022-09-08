@@ -13,14 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('submenus', function (Blueprint $table) {
+        Schema::create('pdfcomments', function (Blueprint $table) {
             $table->id();
-            $table->string('submenu');
-            $table->string('file');
-            $table->string('title');
+            $table->string('name');
+            $table->string('email');
+            $table->foreignId('submenu_id')->references('id')->on('Submenus');
             $table->text('body');
-            $table->foreignId('navbar_id')->references('id')->on('navbars');
-            $table->bigInteger('reads')->unsigned()->default(0)->index();
             $table->timestamps();
         });
     }
@@ -32,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('submenus');
+        Schema::dropIfExists('pdfcomments');
     }
 };

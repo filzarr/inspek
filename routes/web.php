@@ -9,6 +9,9 @@ use App\Http\Controllers\CarouselController;
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SinglePostController;
+use App\Http\Controllers\PdfController;
+use App\Http\Controllers\DataPegawaiController;
+use App\Http\Controllers\MenuController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,11 +22,18 @@ use App\Http\Controllers\SinglePostController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//beranda
 Route::get('/', [BerandaController::class, 'api']);
+//singlepost
 Route::get('/post/{id}', [SinglePostController::class, 'index']);
 Route::post('submit/comment', [SinglePostController::class, 'store'])->name('submitcomment');
-Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
+//pdfview
+Route::get('/pdf/{id}', [PdfController::class, 'index']);
+Route::post('submit/pdfcomment', [PdfController::class, 'store'])->name('submitpdfcomment');
+//submenu view
+Route::get('menu/{id}', [MenuController::class, 'index']);
+//login admin
+Route::get('/login', [LoginController::class, 'index'])->middleware('guest')->name('login');
 Route::get('/logout', [LoginController::class, 'logout'])->middleware('auth');
 Route::post('/submitlogin', [LoginController::class, 'authenticate'])->middleware('guest');
 
@@ -49,3 +59,6 @@ Route::post('/create/menu/add', [NavbarController::class, 'storemenu'])->middlew
 Route::get('/comment', [CommentController::class, 'index'])->middleware('auth');
 Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
 Route::get('/comment/delete/{id}', [CommentController::class, 'destroy'])->middleware('auth');
+Route::get('pdf/comment/delete/{id}', [CommentController::class, 'delete'])->middleware('auth');
+//datapegawai
+Route::resource('/datapegawai', DataPegawaiController::class)->middleware('auth');
