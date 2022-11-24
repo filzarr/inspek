@@ -4,11 +4,54 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+  #saber h1{
+        font-weight: bolder !important;
+  
+    }
+    #saber p{
+        font-weight: lighter !important;
+  
+    }
+    #saber i{
+  
+    }
+    #ppid{
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px #888888;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.671);
+    }
+    #ppid i{
+        font-size: 50px;
+        color: rgba(14, 155, 148, 0.799);
 
+    }
+    #ppid p{
+        
+    }
+    
 /* #myChart{
     width: 500px !important;
     height: 500px !important;
 } */
+
+.masthead p{
+    color: rgb(21, 15, 15);
+    font-weight: bolder;
+    font-size: large;
+}
+.masthead h1{
+    
+    font-weight: bolder !important;
+
+}
+#artikels thead{
+    font-size:large;
+}
+#artikels tbody{
+    font-size: medium;
+}
 #kirii {
     animation: ease-in;
     /* animation: ; */
@@ -86,6 +129,11 @@ body {
 }
 
 @media all and (min-width: 992px) {
+    #form{
+        border: 1px solid rgba(0, 0, 0, 0.267);
+        box-shadow: 5px 10px #888888;
+        border-radius: 10px;
+    }    
     #btnn{
         flex: auto;
         justify-self: end;
@@ -326,6 +374,30 @@ element::-webkit-scrollbar {
 
 /* ============ small devices ============ */
 @media (max-width: 991px) {
+  
+    #saber i{
+        font-size: 30px !important;
+    }
+    #saber{
+        
+    }
+    #saber p{
+        font-size: smaller!important;
+   
+      
+    }
+  
+    #saber img{
+       width: 30px !important;
+       height: 30px !important;
+    }
+    #tugas p{
+        font-size: smaller!important;
+    }
+    #tugas img{
+       width: 100vw !important;
+       height: 300px !important;
+    }
     #btnn{
         margin-top: 1rem !important;
     }

@@ -39,8 +39,12 @@
                 <a class="collapse-item" href="/comment">Kelola Comment</a>
                 <a class="collapse-item" href="/carousel">Kelola slider</a>
                 <a class="collapse-item" href="/navbar">Kelola navbar</a>
-                <a class="collapse-item" href="/newlastter">Kelola newlastter</a>
-            </div>
+                <a class="collapse-item" href="/imageslider">Kelola Galeri Foto</a>
+      
+                <a class="collapse-item" href="/ppidadmin">Kelola PPID</a>
+                <a class="collapse-item" href="/datapegawai">Kelola Data Pegawai</a>
+                <a class="collapse-item" href="/laporanppid">Lihat Laporan PPID</a>
+                <a class="collapse-item" href="/laporansaber">Lihat Laporan Saber Pungli</a>
         </div>
     </li>
 

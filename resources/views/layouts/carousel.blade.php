@@ -6,7 +6,7 @@
         @endphp
         @foreach ($carousel as $data)
         <div class="carousel-item {{ $active }}">
-          <img src="storage/{{ $data->image }}" class="d-block w-100" style="height: 550px" alt="...">
+          <img src="app/{{ $data->image }}" class="d-block w-100" style="height: 550px" alt="...">
         </div>
             @php
                 $active = " "

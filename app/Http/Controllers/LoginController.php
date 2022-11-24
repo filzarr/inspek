@@ -11,12 +11,15 @@ class LoginController extends Controller
         return view("admin.auth.login");
     }
     public function authenticate(Request $request){
+        
         $credentials = $request->validate([
-            'email' => 'required|email:dns',
+            'email' => 'required',
             'password' => 'required'
             
         ]);
         if (Auth::Attempt($credentials)) {
+            $request->session()->regenerate();
+            // echo'berhasil';
             return redirect('/admin');
         }
         else{

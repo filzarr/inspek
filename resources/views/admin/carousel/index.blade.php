@@ -37,7 +37,7 @@
                                 @foreach ($data as $data)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td><img src="storage/{{ $data->image }}" alt="" width="100" height="100"></td>
+                                        <td><img src="app/{{ $data->image }}" alt="" width="100" height="100"></td>
                                         
                                         <td>
                                             <form action="{{ route('carousel.destroy',$data->id) }}" method="POST">

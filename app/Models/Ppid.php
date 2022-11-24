@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Ppid extends Model
 {
     use HasFactory;
+    protected $fillable = [
+     
+        'judul',
+        'pdf',
+        'kategori',
+        'tanggal',
+        'category' 
+    ];
 }

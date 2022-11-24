@@ -8,7 +8,13 @@
             <div class="card mx-3 mb-3 border-0 " class="card">
                 <div class="row ">
                     <div class="col-md-4">
+                        @if($post->id > 11)
+                        <img src="app/{{ $post->image }}" class="img-fluid rounded-start" alt="...">
+                        
+                        @else
+                            
                         <img src="storage/{{ $post->image }}" class="img-fluid rounded-start" alt="...">
+                        @endif
                     </div>
                     <div class="col-8">
                         <div class="card-body">

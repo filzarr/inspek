@@ -13,6 +13,10 @@ class Navbar extends Model
      
         'menu',
         'judul_id',
+        'body',
+        'title',
+        'image',
+        'submenu'
         
     ];
     public function Submenu()

@@ -12,7 +12,11 @@
                 <i class="bi bi-chat-dots pe-lg-3"> {{ $countcomment }} comment</i>
             </div>
             <div class="col-12 gap-lg-5 ms-lg-5  ms-3 mt-3">
+            @if($data->id > 11)
+                <img src={{ url("app/$data->image") }} class="img-fluid col-11 " alt="">
+            @else
                 <img src={{ url("storage/$data->image") }} class="img-fluid col-11 " alt="">
+            @endif
             </div>
             <div class="col mt-lg-5 ms-lg-5 me-lg-5 fs-5 pb-5" id="artikels">
                 <p class="break-word" style="word-break:initial">{!! $data->body !!}</p>

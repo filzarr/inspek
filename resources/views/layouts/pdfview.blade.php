@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <iframe  id="pdf"  src="{{ url("storage/$data->file") }}" alt="pdf" ></iframe>
+        <iframe  id="pdf"  src="{{ url("app/$data->file") }}" alt="pdf" ></iframe>
         <div class="mb-5 ms-lg-5 ms-3"><a href="/download/{{ $data->id }}"><button class="btn btn-primary btn-lg">Download</button></a></div>
 
 

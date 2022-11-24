@@ -59,7 +59,7 @@
 						<h3>Login</h3>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Email yg valid: a@b.c" >
-						<input class="input100" type="text" name="email" required>
+						<input class="input100" type="email" name="email" required>
 						<span class="focus-input100" data-placeholder="email"></span>
 					</div>
 
@@ -81,7 +81,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
+							<button class="login100-form-btn" type="submit">
 								Login
 							</button>
 						</div>

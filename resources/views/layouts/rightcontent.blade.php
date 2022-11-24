@@ -1,7 +1,7 @@
 <div class="float-sm-start shadow-lg   mx-4 mt-5 col-3" id="kirii" style="background-color: #ffffff">
     <div class="row" id="kotak">
         <div class="float-sm-start pt-3" id="isi">
-            <img style="width: 100%" src="img/kepala.jpg" alt="">
+            <img style="width: 100%" src="img/kepala.png" alt="">
         </div>
     </div>
 
@@ -23,8 +23,13 @@
             @foreach ($beritapopuler as $item)
                 <div class="card mb-2 border-0 mt-zz" style="max-width: 540px;">
                     <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{{ url("storage/$item->image") }}" class="img-fluid rounded-start" alt="...">
+                        <div class="col-md-4">@if($item->id > 11)
+                        <img src="app/{{ $item->image }}" class="img-fluid rounded-start" alt="...">
+                        
+                        @else
+                            
+                        <img src="storage/{{ $item->image }}" class="img-fluid rounded-start" alt="...">
+                        @endif
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">

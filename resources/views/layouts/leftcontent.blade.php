@@ -36,21 +36,21 @@
             <div class="d-flex justify-content-evenly pb-5" id="terkait">
                 <ul class="list-group">
                     <li> <a href="https://covid19.sumutprov.go.id/" target="_blank">
-                            <img src={{ url('image/link1.png') }} class=" float-start" alt="..."
+                            <img src="/img/link1.png" class=" float-start" alt="..."
                                 style="height: 60px" style="width: 50px">
                         </a></li>
 
                 </ul>
                 <ul class="list-group">
-                    <li> <a href="http://sisumaker.sumutprov.go.id/" target="_blank">
-                            <img src={{ url('image/link3.jpeg') }} class=" float-start" alt="..."
+                    <li> <a href="https://sisumaker.sumutprov.go.id/" target="_blank">
+                            <img src="/img/link3.jpeg" class=" float-start" alt="..."
                                 style="height: 60px" style="width: 50px">
                         </a></li>
 
                 </ul>
                 <ul class="list-group">
                     <li> <a href="https://sumutprov.lapor.go.id/" target="_blank">
-                            <img src={{ url('image/link2.jpeg') }} class=" float-start" alt="..."
+                            <img src="/img/link2.jpeg" class=" float-start" alt="..."
                                 style="height: 60px" style="width: 50px">
                         </a></li>
 

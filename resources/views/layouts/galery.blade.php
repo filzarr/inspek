@@ -14,63 +14,46 @@
                 <div class="container ">
                     <div id="carouselExampleControls1" class="carousel slide" data-db-ride="carousel">
                         <div class="carousel-inner  " id="vidio">
-                            <div class="carousel-item active">
+                            @php
+                                $active = "active"
+                            @endphp
+                            @foreach ($image as $data)
+                            <div class="carousel-item {{ $active }}">
                                 <div class="  d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
+                                   
                                     <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                                        <li> <img data-enlargable src={{ url('img/contoh1.jpg') }}
+                                        <li> @if($data->id > 5)
+                        <img src="/app/{{ $data->image }}" class="img-fluid rounded-start" alt="...">
+                        
+                        @else
+                        <img data-enlargable src="/storage/{{ $data->image }}"
                                                 class="rounded float-start img-fluid"
-                                                alt="..." " ></li>
-                        <li> <img data-enlargable src={{ url('img/contoh1.jpg') }} class="rounded float-start img-fluid" alt="..." ">
-                                        </li>
+                                                alt="..." >
+                        @endif
+                                            
+                                            </li>
+                             
+                                     
                                     </ul>
-                                    <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                                        <li> <img data-enlargable src={{ url('img/contoh2.jpg') }}
-                                                class="rounded float-start img-fluid"
-                                                alt="..." " ></li>
-                        <li> <img data-enlargable src={{ url('img/contoh2.jpg') }} class="rounded float-start img-fluid" alt="..." ">
-                                        </li>
-                                    </ul>
-
+                         
+                                   
+                                   
+    
                                 </div>
                             </div>
-
-                            <div class="carousel-item">
-                                <div class="  d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
-                                    <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                                        <li> <img data-enlargable src={{ url('img/contoh1.jpg') }}
-                                                class="rounded float-start img-fluid"
-                                                alt="..." " ></li>
-                        <li> <img data-enlargable src={{ url('img/contoh1.jpg') }} class="rounded float-start img-fluid" alt="..." ">
-                                        </li>
-                                    </ul>
-                                    <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                                        <li> <img data-enlargable src={{ url('img/contoh2.jpg') }}
-                                                class="rounded float-start img-fluid"
-                                                alt="..." " ></li>
-                        <li> <img data-enlargable src={{ url('img/contoh2.jpg') }} class="rounded float-start img-fluid" alt="..." ">
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="  d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row" id="ini">
-                                    <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                                        <li> <img data-enlargable src={{ url('img/contoh1.jpg') }}
-                                                class="rounded float-start img-fluid"
-                                                alt="..." " ></li>
-                        <li> <img src={{ url('img/contoh1.jpg') }} class="rounded float-start img-fluid" alt="..." ">
-                                        </li>
-                                    </ul>
-                                    <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-                                        <li> <img src={{ url('img/contoh2.jpg') }}
-                                                class="rounded float-start img-fluid"
-                                                alt="..." " ></li>
-                        <li> <img src={{ url('img/contoh2.jpg') }} class="rounded float-start img-fluid" alt="..." "></li>
-                                    </ul>
-
-                                </div>
-                            </div>
+                            @php
+                                $active = "   "
+                            @endphp
+                            @endforeach
+                    
+             
+                       
+               
+           
+                      
+                    
+                
+                          
                         </div>
 
 
@@ -103,7 +86,7 @@
                         <h2>Galeri Video</h2>
                     </div>
                 </div>
-
+                
                 <div class="container ">
                     <div id="carouselExampleControls2" class="carousel slide" data-db-ride="carousel">
                         <div class="carousel-inner  " id="vidio">
@@ -114,13 +97,13 @@
 
 
                                         <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][0]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/faR3YhwqXgs"
                                                 frameborder="0"></iframe></li>
 
 
 
                                         <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][1]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/XNEUnRIUafw"
                                                 frameborder="0"></iframe></li>
 
 
@@ -129,13 +112,13 @@
 
 
                                         <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][2]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/nhfqnXI4-nI"
                                                 frameborder="0"></iframe></li>
 
 
 
                                         <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][3]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/zZJRaOdooJY"
                                                 frameborder="0"></iframe></li>
 
 
@@ -149,52 +132,27 @@
                                     id="ini">
                                     <ul class="list-group col-sm-4 offset-sm-4  " id="gal">
                                         <li><iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][4]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/iOXmtijnPeM"
                                                 frameborder="0"></iframe></li>
 
                                         <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][5]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/WF-mVsj57_w"
                                                 frameborder="0"></iframe></li>
                                     </ul>
                                     <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
 
                                         <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][6]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/svGlLpTlj2s"
                                                 frameborder="0"></iframe></li>
 
                                         <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][7]['id']['videoId'] }}"
+                                                src="https://www.youtube.com/embed/XvpsAviIL7U"
                                                 frameborder="0"></iframe></li>
                                     </ul>
 
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class=" gap-3 d-flex justify-content-evenly ms-5 ps-5 my-5 float-lg-row"
-                                    id="ini">
-                                    <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-
-                                        <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][8]['id']['videoId'] }}"
-                                                frameborder="0"></iframe></li>
-
-                                        <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][9]['id']['videoId'] }}"
-                                                frameborder="0"></iframe></li>
-                                    </ul>
-                                    <ul class="list-group col-sm-4 offset-sm-4 " id="gal">
-
-                                        <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][10]['id']['videoId'] }}"
-                                                frameborder="0"></iframe></li>
-
-                                        <li> <iframe id="player" type="text/html" width="180" height="120"
-                                                src="http://www.youtube.com/embed/{{ $hasil['items'][11]['id']['videoId'] }}"
-                                                frameborder="0"></iframe></li>
-                                    </ul>
-
-                                </div>
-                            </div>
+                       
                         </div>
 
 
@@ -212,6 +170,10 @@
                         </div>
                     </div>
                 </div>
+                
+                
+               
+              
             </div>
         </div>
     </div>

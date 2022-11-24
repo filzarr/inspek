@@ -12,31 +12,42 @@
                                 ->get();
                         @endphp
                         @foreach ($subhead as $item)
+                        @if ($item->submenu == "tidak")
                             <li>
-                                <a class="dropdown-item" href="/menu/{{ $item->id }}">{{ $item->menu }}</a>
+                                
+                            <a class="dropdown-item" href="/menu/{{ $item->id }}">{{ $item->menu }}</a>
+                            <ul class="submenu dropdown-menu " style="background-color: rgb(50, 130, 184)">
+
+                                @php
+                                    $submenu = App\Models\Submenu::with('Navbar')
+                                        ->where('navbar_id', '=', $item->id)
+                                        ->get();
+                                @endphp
+                                @foreach ($submenu as $data)
+                                    <li>
+                                        <a class="dropdown-item" href="/pdf/{{ $data->id }}">{{ $data->submenu }}</a>
+                                    </li>
+                                @endforeach
 
 
-                                <ul class="submenu dropdown-menu " style="background-color: rgb(50, 130, 184)">
 
-                                    @php
-                                        $submenu = App\Models\Submenu::with('Navbar')
-                                            ->where('navbar_id', '=', $item->id)
-                                            ->get();
-                                    @endphp
-                                    @foreach ($submenu as $data)
-                                        <li>
-                                            <a class="dropdown-item" href="/pdf/{{ $data->id }}">{{ $data->submenu }}</a>
-                                        </li>
-                                    @endforeach
+                            </ul>
+                        </li>
+                                
+                                @else
+                                <a class="dropdown-item" href="/navbar/{{ $item->id }}">{{ $item->menu }}</a>
+                                @endif
+                               
 
 
-
-                                </ul>
-                            </li>
+                              
                         @endforeach
+                       
                     </ul>
                 </li>
             @endforeach
+            <li class="nav-item active"> <a class="nav-link" href="/ppid">PPID </a> </li>
+            <li class="nav-item active"> <a class="nav-link" href="/saberpungli">Saber Pungli </a> </li>
             {{-- <li class="nav-item dropdown">
           <a class="nav-link" href="#" data-bs-toggle="dropdown">Regulasi</a>
             <ul class="dropdown-menu" style="background-color: rgb(50, 130, 184)">
